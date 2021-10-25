@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 3px;
 }
 body{
     background-color: rgb(52, 88, 121);
@@ -11,17 +11,13 @@ body{
     
 }
                             /* Campo de Pesquisa */
-header{
-    
-    height: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+header{    
+    height: 2.5em;
+
 
 }
 .menu{
-    margin: 5px;
-    margin-right: 0;
+    margin: 5px 10px;
     display: flex; 
     align-items: center;   
 }
@@ -29,34 +25,52 @@ ul{
     margin: 5px;
     padding: 0;
 }
-ul:nth-child(1){
-    margin-top: 33px;
-}
-ul:nth-last-child(){
-    margin-top: 33px;
-}
+
 li{
-    margin: 5px 0;
+    list-style: none;
+    margin: 15px 0;
     
 }
 header input{
     width: 92vw;
     margin-right: 0.3rem;
+    height: 2.4em;
+    border-radius: 15px;
+}
+.header-item{
+    padding: 0;
+    margin: 0;
+}
+#sacola{
+    width: 30px;
+    padding-left: 5px;
+    padding-top: 2px;
 }
                             /* Campo do Produto */
 .produtos{
     background-color: aliceblue;
     border: 3px solid;
-    height: 5rem;
+    height: 10rem;
     display: flex;
+    align-items: flex-start;
+    border-radius: 5px;
 }
 .produto-imagem{
     width: 6em;
     padding: 6px;
     align-items: center;
+    height: 90%;
+    max-height: 90%;
 }
-img{
+article div img{
     width: 4.3em;
+}
+.produto-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 90%;
+    max-height: 90%;
 }
 .titulo,.preco, .descricao{
     padding: 0;
@@ -67,21 +81,26 @@ img{
     margin-top: 5px;
     font-size: 10px;
     height: 2em;
+    max-width: 100em;
+    
 }
 
                                 /* Foooter */
 footer{
+    margin: 0;
     width: 100vw;
-    height: 25px;
+    height: 2.5em;
     
     background-color: aliceblue;
     position: fixed;
     bottom: 0;
     left: 0;
-    
-}
-footer div{ 
+
     display: flex;
     justify-content: space-around;
     align-items: center; 
+    
+}
+footer img{
+    width: 30px;
 }
