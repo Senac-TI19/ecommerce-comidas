@@ -1,4 +1,4 @@
-const cacheName = 'cache-app-av1';
+const cacheName = 'ecommerce-matheus-v1';
 
 const recursosCacheados = [
     "./",
