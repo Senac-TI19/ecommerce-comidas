@@ -86,21 +86,10 @@ article div img{
 }
 
                                 /* Foooter */
-footer{
-    margin: 0;
-    width: 100vw;
-    height: 2.5em;
-    
-    background-color: aliceblue;
-    position: fixed;
-    bottom: 0;
-    left: 0;
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
-    
-}
 footer img{
     width: 30px;
+}
+.zero{
+    margin-bottom: 0;
 }
