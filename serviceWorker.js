@@ -37,7 +37,13 @@ const recursosCacheados = [
     "./icons/ms-icon-150x150.png",
     "./icons/ms-icon-310x310.png",
     "./icons/sacola.png",
-    "./icons/star.png"
+    "./icons/star.png",
+    "./assets/images/grao-de-bico.jpg",
+    "./assets/images/shimeji.jpg",
+    "./assets/images/soja.jpg",
+    "./assets/images/tofu.jpg",
+    "assets/images/falafel.jpg"
+
 ];
 
 self.addEventListener("install", function (event) {
@@ -49,18 +55,18 @@ self.addEventListener("install", function (event) {
     );
 });
 
-self.addEventListener("fetch", function(event){
+self.addEventListener("fetch", function (event) {
     console.log(`Request para o recurso ${event.request.url}`);
     event.respondWith(
-        caches.match(event.request).then(function(response){
-            if(response){
+        caches.match(event.request).then(function (response) {
+            if (response) {
                 console.log(`Recurso encontrado no cache: ${event.request.url}`);
                 return response;
-            }else{
+            } else {
                 console.log(
                     `Recurso não encontrado no cache. Fazendo request para ${event.request.url}`
                 );
-                return fetch(event.request).catch(function (erro){
+                return fetch(event.request).catch(function (erro) {
                     console.log(`Deu erro ${erro}`)
                 });
             }
