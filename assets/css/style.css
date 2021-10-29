@@ -1,15 +1,4 @@
-*{
-    margin: 3px;
-}
-body{
-    background-color: rgb(52, 88, 121);
-    background-color: rgb(4, 83, 8);
-    
-}
-.fas{
-    color: #000;
-    
-}
+
                             /* Campo de Pesquisa */
 header{    
     height: 2.5em;
@@ -45,47 +34,8 @@ header input{
     width: 30px;
     padding-left: 5px;
     padding-top: 2px;
-}
-                            /* Campo do Produto */
-.produtos{
-    background-color: aliceblue;
-    border: 3px solid;
-    height: 10rem;
-    display: flex;
-    align-items: flex-start;
-    border-radius: 5px;
-}
-.produto-imagem{
-    width: 6em;
-    padding: 6px;
-    align-items: center;
-    height: 90%;
-    max-height: 90%;
-}
-article div img{
-    width: 4.3em;
-}
-.produto-text{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 90%;
-    max-height: 90%;
-}
-.titulo,.preco, .descricao{
-    padding: 0;
-    margin: 0;
-}
-
-.descricao{
-    margin-top: 5px;
-    font-size: 10px;
-    height: 2em;
-    max-width: 100em;
-    
-}
-
-                                /* Foooter */
+}   
+                        /*\\\ Campo de Pesquisa */
 
 footer img{
     width: 30px;
@@ -95,4 +45,14 @@ footer img{
 }
 .border3{
     border: 3px solid;
+}
+
+@media(min-width:600px){
+    .fundo{
+        margin: 0 auto;        
+        width: 410px;
+        border: 2px solid;
+        border-radius: 5%;   
+    }
+
 }
